@@ -35,6 +35,7 @@ ingresos potenciales del cenote ante turistas nacionales y extranjeros.
 - HTML5
 - CSS3
 - JavaScript
+- PHP
 ---
 ## Integrantes del equipo
 - **Gustavo Carrillo** - *Project Manager
