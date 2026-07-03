@@ -25,9 +25,8 @@ clientes, contribuyendo directamente a incrementar los ingresos económicos del 
 ## Objetivo general
 Desarrollar, en un plazo de 6 semanas (del 22 de junio al 31 de julio de 2026), una plataforma web
 funcional para el cenote CHEN YUC —compuesta por landing page, galería, sección de contacto y
-dashboard administrativo—, que permita posicionar el lugar en buscadores y redes sociales, logrando
-al menos 250 visitas y 10 contactos o solicitudes de información generadas a través del sitio durante el
-primer mes posterior a su lanzamiento, contribuyendo así a incrementar la visibilidad digital y los
+dashboard administrativo—, que permita posicionar el lugar en buscadores y redes sociales, 
+contribuyendo así a incrementar la visibilidad digital y los
 ingresos potenciales del cenote ante turistas nacionales y extranjeros.
 
 ## Tecnologías utilizadas
@@ -35,6 +34,9 @@ ingresos potenciales del cenote ante turistas nacionales y extranjeros.
 - HTML5
 - CSS3
 - JavaScript
+- PHP
+- Laravel
+- Base de datos Mysql
 ---
 ## Integrantes del equipo
 - **Gustavo Carrillo** - *Project Manager
