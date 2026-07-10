@@ -1,0 +1,298 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: ghostwhite;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.encabezado {
+    background-color: teal;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.barra-navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.logotipo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.pestanas {
+    display: flex;
+    gap: 5px;
+}
+
+.boton-pestana {
+    color: lightblue;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.boton-pestana:hover {
+    background-color: deepskyblue;
+    color: white;
+}
+
+.boton-pestana.activo {
+    background-color: deepskyblue;
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+
+.contenedor-principal {
+    display: flex;
+    margin-top: 65px;
+    min-height: calc(100vh - 65px);
+}
+
+
+.area-contenido {
+    flex: 3;
+    padding: 40px;
+    background-color: white;
+    border-right: 1px solid lightgray;
+}
+
+
+.columna-login {
+    flex: 1;
+    background-color: black;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.formulario-acceso {
+    background-color: darkslategray;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px;
+    position: sticky;
+    top: 105px;
+}
+
+.titulo-login {
+    color: deepskyblue;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+.subtitulo-login {
+    color: lightgray;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.grupo-entrada {
+    margin-bottom: 20px;
+}
+
+.etiqueta-campo {
+    display: block;
+    color: white;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.campo-texto {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: ghostwhite;
+    font-size: 14px;
+    color: black;
+}
+
+.boton-ingresar {
+    width: 100%;
+    padding: 12px;
+    background-color: deepskyblue;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-ingresar:hover {
+    background-color: teal;
+}
+
+.pie-login {
+    margin-top: 20px;
+    color: darkgray;
+    font-size: 12px;
+    text-align: justify;
+}
+
+
+.contenido-pestana {
+    display: none;
+}
+
+.contenido-pestana.activo {
+    display: block;
+}
+
+
+.titulo-seccion {
+    color: teal;
+    font-size: 28px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid deepskyblue;
+    padding-bottom: 10px;
+}
+
+.subtitulo {
+    color: darkslategray;
+    font-size: 20px;
+    margin: 25px 0 15px 0;
+}
+
+.parrafo {
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: dimgray;
+    text-align: justify;
+}
+
+.texto-destacado {
+    font-size: 18px;
+    color: teal;
+    font-weight: 500;
+    border-left: 4px solid deepskyblue;
+    padding-left: 15px;
+}
+
+.espacio-imagen {
+    background-color: lightgray;
+    border: 1px darkgray;
+    color: dimgray;
+    padding: 40px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 6px;
+    margin: 20px 0;
+    font-style: italic;
+    width: 88%;
+}
+
+
+.tabla-precios {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.tabla-precios th, .tabla-precios td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid lightgray;
+}
+
+.tabla-precios th {
+    background-color: teal;
+    color: white;
+}
+
+.tabla-precios tr:nth-child(even) {
+    background-color: white-smoke;
+}
+
+
+.cuadricula-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tarjeta-informativa {
+    background-color: white-smoke;
+    border: 1px solid lightgray;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.subtitulo-tarjeta {
+    color: darkslatgray;
+    margin-bottom: 10px;
+}
+
+
+.contenedor-reglas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.caja-alerta {
+    background-color: lavenderblush;
+    border-left: 4px solid red;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.caja-correcto {
+    background-color: honeydew;
+    border-left: 4px solid green;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.lista-viñetas {
+    margin-left: 20px;
+    line-height: 1.6;
+    color: dimgray;
+}
+
+.lista-viñetas li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 900px) {
+    .contenedor-principal {
+        flex-direction: column;
+    }
+    .columna-login {
+        flex: none;
+        width: 100%;
+    }
+    .contenedor-reglas {
+        grid-template-columns: 1fr;
+    }
+    .barra-navegacion {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
